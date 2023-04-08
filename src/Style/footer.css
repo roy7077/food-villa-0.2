@@ -1,0 +1,37 @@
+
+/*----------Footer----------*/
+
+.footer >.footer-1{
+    justify-content: space-between;
+    display: flex;
+    flex-wrap:wrap;
+    background-color: black;
+    color: white;
+  }
+  
+  .footer h3{
+    font-style: initial;
+    color: gray;
+    font-size:x-large;
+  }
+  
+  .footer li{
+    font-style: initial;
+    font-size: large;
+  }
+  .footer ul{
+    display: block;
+  }
+  
+  .lowest{
+    margin: 0px;
+    align-items: center;
+    height: 4rem;
+    color: white;
+    background-color: black;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap:wrap;
+    border-top: 1px solid gray;
+  }
+  

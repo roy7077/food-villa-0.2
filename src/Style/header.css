@@ -1,0 +1,25 @@
+.header{
+    background-color: lavender;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul{
+    padding: 0.5rem;
+    list-style-type: none;
+    display: flex;
+}
+  
+ul>li{
+    font-size:x-large;
+    padding:0.5rem;
+    margin:0.5rem;
+}
+.header > img{
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    float:left;
+    width: 10%;
+    height: fit-content;
+}
