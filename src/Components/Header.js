@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../Style/header.css"
 import '../App.css';
 
 const Header=()=>{
+  const[loggedIn,setLoggedIn]=useState(false);
   return (
     <div className='header'> 
       <img 
@@ -13,10 +14,19 @@ const Header=()=>{
       
       <ul className='nav-bar'>
         <li>Home</li>
+        <li>About</li>
         <li>Contact</li>
         <li>Cart</li>
+
+        {
+        loggedIn?
+        <button onClick={()=>{setLoggedIn(false)}}>LogOut</button> 
+        : 
+        <button onClick={()=>{setLoggedIn(true)}}>LogIn</button>
+      }
       </ul>
 
+      
     </div>
   )
 }

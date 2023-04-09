@@ -11,6 +11,12 @@ ul{
     display: flex;
 }
   
+ul>button{
+    background-color: lavender;
+    border: 2px solid grey;
+    border-radius: 25px;
+    text-shadow: 1px 1px black;
+}
 ul>li{
     font-size:x-large;
     padding:0.5rem;

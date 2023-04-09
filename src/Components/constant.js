@@ -1,5 +1,7 @@
 export const IMG_CDN_URL="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
 
+export const API="https://www.swiggy.com/dapi/restaurants/list/v5?lat=30.9002695&lng=75.8581159&offset=31&sortBy=RELEVANCE&pageType=SEE_ALL&page_type=DESKTOP_SEE_ALL_LISTING";
+
 const rest=[
     {
       "cardType": "restaurant",
