@@ -32,7 +32,8 @@ const Body=()=>{
     async function getRestaurant(){
       const datas=await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=30.9002695&lng=75.8581159&offset=31&sortBy=RELEVANCE&pageType=SEE_ALL&page_type=DESKTOP_SEE_ALL_LISTING");
       const json=await datas.json();
-      //console.log(json?.data?.cards);
+
+      console.log(json?.data?.cards);
       SetFoodData(json?.data?.cards)
       SetAllRestaurant(json?.data?.cards)
     }
@@ -50,11 +51,17 @@ const Body=()=>{
         className='search'
         placeholder='Search for food'
         value={SearchText}
+        //to make the change in the value
         onChange={
             (e)=>{
                 SetSearchText(e.target.value);
             }
         }
+
+        //to make Searchtext so that user can type his own rest. insivible
+        onClick={()=>{
+          SetSearchText("");
+        }}
         />
         <button
         onClick={()=>{
@@ -66,17 +73,17 @@ const Body=()=>{
         Search
         </button>
 
-        <div className="card-list">
-      
-      {FoodData.map((restaurant) => {
-          return (
-            <>
-            {/* {console.log(restaurants)} */}
-            <CardList key={restaurant.data.id} {...restaurant.data.data}/>
-            </>
-            
-          );
-        })}
+      <div className="card-list">
+
+        {FoodData.map((restaurant) => {
+            return (
+              <>
+              {/* {console.log(restaurants)} */}
+              <CardList key={restaurant.data.id} {...restaurant.data.data}/>
+              </>
+              
+            );
+          })}
       </div>
 
     </div>

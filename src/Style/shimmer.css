@@ -1,0 +1,11 @@
+.shimmer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.shimmer-card{
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+    background-color: #c9c9c9;
+}
+
