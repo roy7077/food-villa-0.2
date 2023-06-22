@@ -1,0 +1,27 @@
+
+.menu{
+   padding: 3rem;
+   margin: 2rem;
+   display: flex;
+}
+.menu>.image>img{
+    border-radius: 10%;
+}
+.menu>.details{
+    Font-family: Rockwell, Courier Bold, Courier, Georgia, Times, Times New Roman, serif;
+    margin: 3rem;
+}
+
+@media screen and (max-width:700px){
+   
+    .menu{
+        display: block;
+        padding: 1rem;
+        margin:0px;
+    }
+
+    .image>img{
+        height:30%;
+        width: 100%;
+    }
+}

@@ -2,6 +2,12 @@ export const IMG_CDN_URL="https://res.cloudinary.com/swiggy/image/upload/fl_loss
 
 export const API="https://www.swiggy.com/dapi/restaurants/list/v5?lat=30.9002695&lng=75.8581159&offset=31&sortBy=RELEVANCE&pageType=SEE_ALL&page_type=DESKTOP_SEE_ALL_LISTING";
 
+export const ITEM_IMG_CDN_URL =
+  "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/";
+
+export const swiggy_menu_api_URL =
+  "https://corsanywhere.herokuapp.com/https://www.swiggy.com/dapi/menu/v4/full?lat=21.1702401&lng=72.83106070000001&menuId=";
+
 const rest=[
     {
       "cardType": "restaurant",

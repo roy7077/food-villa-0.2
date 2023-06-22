@@ -14,13 +14,7 @@ const CardList = ({
   })=>{
   return (
     <div className='card'>
-      {/* {console.log(cloudinaryImageId)}
-      {console.log(name)}
-      {console.log(cuisines)}
-      {console.log(area)}
-      {console.log(lastMileTravelString)}
-      {console.log(costForTwoString)}
-      {console.log(avgRating)} */}
+    
       <img 
       src={IMG_CDN_URL+cloudinaryImageId}
       alt="food-img"

@@ -5,6 +5,7 @@ import data from "./constant"
 import CardList from './CardList';
 import {API} from './constant';
 import Shimmer from './Shimmer';
+import { Link } from 'react-router-dom';
 import "../Style/body.css"
 import '../App.css';
 
@@ -33,7 +34,7 @@ const Body=()=>{
       const datas=await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=30.9002695&lng=75.8581159&offset=31&sortBy=RELEVANCE&pageType=SEE_ALL&page_type=DESKTOP_SEE_ALL_LISTING");
       const json=await datas.json();
 
-      console.log(json?.data?.cards);
+      //console.log(json?.data?.cards);
       SetFoodData(json?.data?.cards)
       SetAllRestaurant(json?.data?.cards)
     }
@@ -74,13 +75,14 @@ const Body=()=>{
         </button>
 
       <div className="card-list">
-
+        
         {FoodData.map((restaurant) => {
             return (
-              <>
-              {/* {console.log(restaurants)} */}
-              <CardList key={restaurant.data.id} {...restaurant.data.data}/>
-              </>
+              
+              <Link to={"/resturant/"+restaurant.data.data.id} key={restaurant.data.data.id} className='link'>
+              <CardList  {...restaurant.data.data}/>
+              </Link>
+            
               
             );
           })}
