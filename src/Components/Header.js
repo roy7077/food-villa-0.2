@@ -16,14 +16,14 @@ const Header=()=>{
         <li><Link to="/about" className='l2'>About</Link></li>
         <li><Link to="/contact" className='l3'>Contact</Link></li>
         <li className='l4'>Cart</li>
-        <li>
+        {/* <li>
         {
         loggedIn?
         <button onClick={()=>{setLoggedIn(false)}}>LogOut</button> 
         : 
         <button onClick={()=>{setLoggedIn(true)}}>LogIn</button>
          }
-        </li>
+        </li> */}
         
       </ul>
 

@@ -1,27 +1,45 @@
-
 .menu{
-   padding: 3rem;
-   margin: 2rem;
-   display: flex;
-}
-.menu>.image>img{
-    border-radius: 10%;
-}
-.menu>.details{
-    Font-family: Rockwell, Courier Bold, Courier, Georgia, Times, Times New Roman, serif;
-    margin: 3rem;
+    justify-content: space-between;
+    padding: 4rem;
+    display: flex;
 }
 
+.menu-card{
+    padding-left: 20rem;
+    padding-right: 20rem;
+}
+.details >.heading{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+    text-align: left;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    font-weight:lighter;
+}
+
+/*------responsive-----*/
 @media screen and (max-width:700px){
    
+    .menu-card{
+        padding-left: 0;
+        padding-right: 0;
+        padding-top:1rem;
+        padding-bottom:1rem;
+    }
     .menu{
-        display: block;
-        padding: 1rem;
-        margin:0px;
+        padding: 0.3rem;
     }
 
-    .image>img{
-        height:30%;
-        width: 100%;
+    .details{
+        width: 50%;
+        text-align: left;
+    }
+
+    .heading{
+        text-align: left;
     }
 }

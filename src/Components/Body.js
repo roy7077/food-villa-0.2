@@ -46,7 +46,8 @@ const Body=()=>{
     return (<h1>Not found</h1>);
 
   return AllRestaurant.length===0?(<Shimmer/>):(
-    <div>
+    <div> 
+      <div className='input-search'>
         <input 
         type='text'
         className='search'
@@ -64,7 +65,9 @@ const Body=()=>{
           SetSearchText("");
         }}
         />
+
         <button
+        className="button-3" 
         onClick={()=>{
           const filter=filterData(SearchText,AllRestaurant);
           //console.log(filter);
@@ -73,6 +76,8 @@ const Body=()=>{
         > 
         Search
         </button>
+      </div>
+        
 
       <div className="card-list">
         

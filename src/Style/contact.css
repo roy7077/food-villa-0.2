@@ -1,8 +1,123 @@
-.contact>img{
+.contact{
+    border: 1px solid #5f4c4c;
+    height: 50%;
     width: 50%;
-    border: 20%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #5f4c4c;
+    margin-left: 20rem;
+    margin-top: 5rem;
+
+}
+.heading{
+    text-align: center;
+    margin-left: 10px;
+}
+.first,.second,.third{
+    margin: 20px;
+}
+label,
+textarea {
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
 }
 
-.contact{
-    padding:5rem;
+textarea {
+    padding: 10px;
+    width: 90%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form{
+    display: flex;
+}
+
+
+
+
+/* CSS */
+.button-55 {
+  width: 20%;
+  margin: 10px;
+  align-self: center;
+  background-color: #5f4c4c;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-55:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button-55:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+
+/*-------responsive-------*/
+
+@media screen and (max-width:700px){
+   
+    .contact{
+        text-align: center;
+        width: 85%;
+        height: 50%;
+        margin: 20px;
+        display: block;
+    }
+    .text> textarea{
+        width: 80%;
+    }
+    .form{
+        padding: 10px;
+        text-align: left;
+        display: block;
+    }
+
+    .heading{
+        width: 100%;
+        font-size:x-large;
+    }
+
+    .input{
+        width: 98%;
+    }
+
+    .button-55{
+        width: 40%;
+    }
 }

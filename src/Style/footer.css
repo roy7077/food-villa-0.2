@@ -1,17 +1,26 @@
 
 /*----------Footer----------*/
-
+.footer{
+  display: block;
+}
 .footer >.footer-1{
-    justify-content: space-between;
-    display: flex;
-    flex-wrap:wrap;
-    background-color: black;
+    text-align: left;
+    display: block;
+    background-color:#404040;
     color: white;
   }
   
+  .footer >.footer-1 > .contact{
+     text-align: left;
+     color: white;
+     margin-left: 2px;
+     border: 0px;
+     margin-top: 5px;
+     margin-bottom: 5px;
+  }
   .footer h3{
     font-style: initial;
-    color: gray;
+    color: white;
     font-size:x-large;
   }
   
@@ -28,7 +37,7 @@
     align-items: center;
     height: 4rem;
     color: white;
-    background-color: black;
+    background-color: #404040;
     justify-content: space-between;
     display: flex;
     flex-wrap:wrap;
